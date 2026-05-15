@@ -27,10 +27,10 @@ const Header = () => {
         </Link>
 
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+          <li><Link to="/"        onClick={() => setMenuOpen(false)}>Home</Link></li>
           <li><Link to="/dealers" onClick={() => setMenuOpen(false)}>Dealers</Link></li>
-          <li><a href="/about" onClick={() => setMenuOpen(false)}>About</a></li>
-          <li><a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+          <li><Link to="/about"   onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
 
         <div className="nav-actions">
