@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "react-icons": "^5.6.0",
+    "react-toastify": "^11.1.0"
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Best Cars Dealership</title>
+  <!-- Link CSS files -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .contact-section {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #f0f8ff;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px #ccc;
+    }
+    .contact-section img {
+      width: 250px;
+      border-radius: 10px;
+    }
+    .contact-section h2 {
+      color: darkturquoise;
+      margin-bottom: 15px;
+    }
+    .contact-section p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section with Image -->
+  <div class="contact-section">
+    <img src="/static/contact_image.png" alt="Contact Us">
+    <div>
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+      <p><strong>Email:</strong> info@bestcars.com</p>
+      <p><strong>Address:</strong> 123 Main Street, North America City, NA 12345</p>
+      <p><strong>Business Hours:</strong> Mon-Fri: 9 AM - 6 PM | Sat: 10 AM - 4 PM | Sun: Closed</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Best Cars Dealership</title>
+  <!-- Link the stylesheets -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Header -->
+  <div class="card" style="width: 80%; margin: auto; margin-top:5%;">
+    <div class="banner" name="about-header">
+      <div id="about-header" style="padding: 20px; text-align: center;">
+        <h1>About Us</h1>
+        <p>Welcome to Best Cars dealership, home to the best cars in North America. We deal in selling domestic and imported cars at reasonable prices.</p>
+        <p>Our mission is to provide high-quality vehicles with excellent customer service.</p>
+      </div>
+
+      <!-- Team Members -->
+      <div style="display: flex; flex-direction: row; justify-content: space-around; margin-top: 20px; flex-wrap: wrap; gap: 20px;">
+
+        <!-- Person 1 -->
+        <div class="card" style="width: 30%;">
+          <img src="/static/person.png" alt="Jane Doe" class="card-img-top">
+          <div class="card-body">
+            <p class="title"><strong>Jane Doe</strong></p>
+            <p>CEO</p>
+            <p class="card-text">Jane has over 15 years of experience in automotive sales and loves helping customers find the perfect car.</p>
+            <p>Email: jane@bestcars.com</p>
+          </div>
+        </div>
+
+        <!-- Person 2 -->
+        <div class="card" style="width: 30%;">
+          <img src="/static/person.png" alt="John Smith" class="card-img-top">
+          <div class="card-body">
+            <p class="title"><strong>John Smith</strong></p>
+            <p>Sales Manager</p>
+            <p class="card-text">John specializes in both domestic and imported cars and ensures our customers get the best deals.</p>
+            <p>Email: john@bestcars.com</p>
+          </div>
+        </div>
+
+        <!-- Person 3 -->
+        <div class="card" style="width: 30%;">
+          <img src="/static/person.png" alt="Emily Clark" class="card-img-top">
+          <div class="card-body">
+            <p class="title"><strong>Emily Clark</strong></p>
+            <p>Customer Support</p>
+            <p class="card-text">Emily helps our clients with inquiries and ensures an excellent buying experience from start to finish.</p>
+            <p>Email: emily@bestcars.com</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

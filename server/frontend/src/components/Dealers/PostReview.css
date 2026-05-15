@@ -1,0 +1,40 @@
+.postreview-page { padding: 40px 24px; max-width: 700px; }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--primary); font-weight: 600; margin-bottom: 28px;
+  font-size: 0.9rem; background: none; border: none; cursor: pointer;
+  transition: gap var(--transition); padding: 0;
+}
+.back-link:hover { gap: 12px; }
+
+.postreview-card { padding: 36px; }
+
+.postreview-header {
+  display: flex; align-items: center; gap: 18px; margin-bottom: 32px;
+  padding-bottom: 24px; border-bottom: 1px solid var(--border);
+}
+.pr-avatar {
+  width: 60px; height: 60px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff; font-size: 1.6rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.postreview-header h1 { font-size: 1.4rem; font-weight: 700; margin-bottom: 4px; }
+.postreview-header p { color: var(--text-muted); font-size: 0.9rem; }
+
+.pr-form { display: flex; flex-direction: column; gap: 22px; }
+
+.form-group { display: flex; flex-direction: column; gap: 8px; }
+.form-group label { font-weight: 600; font-size: 0.9rem; color: var(--text); }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+.pr-textarea { resize: vertical; min-height: 120px; font-family: inherit; }
+
+.pr-submit {
+  width: 100%; justify-content: center;
+  padding: 14px; font-size: 1rem; margin-top: 8px;
+}
+.pr-submit:disabled { opacity: 0.7; cursor: not-allowed; }

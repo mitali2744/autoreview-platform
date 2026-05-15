@@ -1,0 +1,62 @@
+.dealer-detail-page { padding: 40px 24px; }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--primary); font-weight: 600; margin-bottom: 28px;
+  font-size: 0.9rem; transition: gap var(--transition);
+}
+.back-link:hover { gap: 12px; }
+
+.dealer-hero {
+  display: flex; align-items: center; gap: 24px;
+  padding: 28px 32px; margin-bottom: 40px; flex-wrap: wrap;
+}
+.dealer-hero-avatar {
+  width: 72px; height: 72px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff; font-size: 2rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+}
+.dealer-hero-info { flex: 1; }
+.dealer-hero-info h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }
+.dealer-hero-info p { color: var(--text-muted); display: flex; align-items: center; gap: 6px; }
+
+.reviews-section { margin-top: 8px; }
+.reviews-title {
+  font-size: 1.4rem; font-weight: 700; margin-bottom: 24px;
+  display: flex; align-items: center; gap: 12px;
+}
+.reviews-count {
+  background: var(--primary); color: #fff;
+  font-size: 0.85rem; padding: 2px 10px; border-radius: 999px;
+}
+
+.reviews-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px;
+}
+
+.review-card { padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+
+.review-card-top { display: flex; align-items: flex-start; gap: 12px; }
+
+.reviewer-avatar {
+  width: 42px; height: 42px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff; font-size: 1.1rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.reviewer-name { font-weight: 600; font-size: 0.95rem; display: flex; align-items: center; gap: 6px; }
+.review-date { font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; gap: 5px; margin-top: 3px; }
+
+.sentiment-badge { margin-left: auto; text-transform: capitalize; }
+
+.review-text {
+  font-size: 0.95rem; line-height: 1.65; color: var(--text);
+  font-style: italic; border-left: 3px solid var(--primary);
+  padding-left: 12px;
+}
+
+.review-car {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.85rem; color: var(--text-muted); font-weight: 500;
+}
