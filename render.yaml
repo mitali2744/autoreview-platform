@@ -1,0 +1,49 @@
+services:
+  # ── Django (main web app) ──────────────────────────────────────────────
+  - type: web
+    name: autoreview-django
+    runtime: python
+    rootDir: server
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn djangoproj.wsgi:application --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: backend_url
+        fromService:
+          name: autoreview-node
+          type: web
+          property: host
+      - key: sentiment_analyzer_url
+        fromService:
+          name: autoreview-sentiment
+          type: web
+          property: host
+
+  # ── Node.js + MongoDB API ──────────────────────────────────────────────
+  - type: web
+    name: autoreview-node
+    runtime: node
+    rootDir: server/database
+    buildCommand: "npm install"
+    startCommand: "node app.js"
+    envVars:
+      - key: MONGO_URL
+        fromDatabase:
+          name: autoreview-mongo
+          property: connectionString
+
+  # ── Flask Sentiment Microservice ───────────────────────────────────────
+  - type: web
+    name: autoreview-sentiment
+    runtime: python
+    rootDir: server/djangoapp/microservices
+    buildCommand: "pip install -r requirements.txt && python -c \"import nltk; nltk.download('vader_lexicon')\""
+    startCommand: "python app.py"
+
+databases:
+  - name: autoreview-mongo
+    databaseName: dealershipsDB
+    plan: free
